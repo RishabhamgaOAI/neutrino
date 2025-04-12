@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: neutrino
+  servlet:
+    multipart:
+      enabled: true
+  main:
+    allow-bean-definition-overriding: true
+
+
+  cloud:
+    config:
+      uri: https://config.observe.ai
+health:
+  config:
+    enabled: false
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator

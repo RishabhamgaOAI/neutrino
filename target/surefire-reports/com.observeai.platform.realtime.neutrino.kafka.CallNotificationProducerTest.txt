@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.observeai.platform.realtime.neutrino.kafka.CallNotificationProducerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.353 s - in com.observeai.platform.realtime.neutrino.kafka.CallNotificationProducerTest

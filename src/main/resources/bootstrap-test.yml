@@ -1,0 +1,135 @@
+observe:
+  assetAlias: observe.backend.service
+  appId: aXVKIUIEJLnxaldkxjefdwej
+  appSecret: ENC(gMlRtipQ7S+DK6nffKhW/tXwyDVmyyTdu/jPFG6mBmYrUINOwHsJU5kAzC6A21Oc)
+kafka:
+  bootstrap-servers: localhost:9092
+  group-id: test-group
+  application-id: neutrino-test-app
+  topics:
+    call-message-topic: call-message-test
+    call-metadata-topic: call-metadata-test
+    call-end-notifier-topic: call-end-notifier-test
+    call-events-topic: call-audio-events-test
+    call-back-meta-events-topic: callback-meta-events-test
+    call-back-meta-events-broadcast-topic: callback-meta-events-broadcast-test
+    call-streamer-events-broadcast-topic: call-streamer-events-broadcast-test
+    notification-server-topic: notification-server-test
+    latency-call-message-topic: latency-call-message-test
+    call-start-messages-broadcast-topic: call-start-messages-broadcast-test
+  consumer:
+    group-id:
+      call-back-meta-events-broadcast-topic: call-back-meta-events-broadcast-group-${random.uuid}
+      call-streamer-events-broadcast-topic: call-streamer-events-broadcast-group-${random.uuid}
+      call-start-messages-broadcast-topic: call-start-messages-broadcast-group-${random.uuid}
+    auto-startup: true
+  enable-auto-commit: true
+  auto-commit-interval-in-millis: 1000
+  partitions: 1
+  replication-factor: 1
+slack:
+  webhook: ENC(2/lQHHrMIo3JtW77t2VsAfvviQu8dXQ7lWMksJXBK5nzcjPN6eAGyOViKQ/UNyV55UNscEm64WKK3gOUhRPqIt5kDAsUeQXSO4ILA6bBgCn5ImCkmfM1eA==)
+genesys:
+  events:
+    topicname: genesys-events-test
+five9:
+  baseUrl: https://api.alpha.us.five9.net/voicestream/v2
+  oauthBaseUrl: https://api.alpha.us.five9.net/oauth2
+  subscriptionByIdPath: /domains/{domainId}/subscriptions/{subscriptionId}
+  directivesPath: /domains/{domainId}/directives
+  attachDirectivePath: /domains/{domainId}/subscriptions/{subscriptionId}/directive/{directiveId}
+  introspectPath: /v1/introspect?client_id={client_id}
+  trustToken: dd96e2c9-c84f-4c04-bec2-257ead1cd709
+  callEventUrl: https://neutrino-e2e.observe.ai/apis/v1/five9/callevents
+  voiceStreamEventUrl: https://neutrino-e2e.observe.ai/apis/v1/five9/voicestream/events
+  grpcTargetUrl: five9-grpc-e2e.observe.ai:443
+auth:
+  assetAlias: observe.backend.service
+  appId: aXVKIUIEJLnxaldkxjefdwej
+  appSecret: ENC(cji68bFQRuaU9YETqqWpugIkGGJI0bH+ekSnmME694KBkJKMl4RKvhbxLKccecin)
+  baseUrl: https://api-e2e.observe.ai/
+  authBaseUrl: https://kong-e2e.observe.ai/
+  authBaseUrlRestrictedCluster: https://kong-e2e.observe.ai/
+  verifyPath: v1/auth/verify
+pauth:
+  baseUrl: https://pauth-e2e.observe.ai
+  tokenPath: /v1/pauth/pa_tokens/{partnerUid}
+dravity:
+  url: https://dravity-e2e.observe.ai
+redis:
+  host: localhost
+  port: 6379
+  callDataDeletionDelayInSeconds: 60
+notification:
+  host: https://ns-e2e.observe.ai
+  notifyPath: /apis/v1/notifications/notify
+  serviceId: realtime
+  alertsType: "Realtime Alerts"
+  cesWsUrlPath: wss://aa21-103-159-11-222.ngrok-free.app/apis/v1/call-details
+  maxRetryAttempts: 5
+  backoffDelay: 500
+  backoffMaxDelay: 60000
+  backoffMultiplier: 4
+kws:
+  default:
+    maximumThreshold: 88
+    windowToKeywordSizeFactor: 1.5
+    smallestWindowSize: 3
+mongodb:
+  uri: mongodb+srv://rt_staging_user:jVHRtadEz3Ahk6Qu@realtime-staging.oa421.mongodb.net/observe-rt
+shedlock:
+  default:
+    lockAtMostFor: "PT30S"
+  newrelic:
+    name: "NewrelicMetricsCollection"
+    lockAtLeastFor: "PT30S"
+    lockAtMostFor: "PT50S"
+newrelic:
+  metricsCollectionCron: "0 * * * * *"
+
+grpc:
+  client:
+    call-transcript:
+      address: static://sentiment-e2e.realtime.net:50051
+      negotiationType: PLAINTEXT
+
+ml:
+  silence:
+    htv-url: https://rt-ml-silence-ai-e2e.observe.ai/predict
+    call-notes-url: https://call-summarization-e2e.observe.ai/stream_summarize
+    app-id: E20302D3565447F88A68E5B15D6821A6
+    app-secret: ENC(aB6tg4WdOX8QUj9vb6he/el6eyS3DSG5dCsg9os6mQ7261dUX2oAAXu70boowRFK)
+    htv:
+      pipeline: svm
+      prediction-confidence-threshold: 0.05
+      silence-htv-threshold: 0.1
+    deadair:
+      pipeline: svm
+      prediction-confidence-threshold: 0.05
+      silence-deadair-threshold: 0.01
+
+deepgram:
+  interimResults: true
+  cutoffToAcceptNonFinalInMillis: 500
+
+call:
+  timeoutForActiveProcessingInSeconds: 100
+  timeoutForMonitoringInSeconds: 600
+  maxCallDurationInSeconds: 3600
+  eligibleReconnectionErrorCodes: [1000, 1006, 1011, 1007]
+  timeoutForReconnectionInSeconds: 60
+
+call-metrics:
+  enabled: true
+  schedulerThreadCount: 10
+  waitForStreamInSeconds: 10
+
+chitragupta:
+  client:
+    monitorEvent:
+      threadPoolSize: 100
+  service:
+    baseUrl: https://kong-e2e.observe.ai/
+    appSecret: ENC(xo/SPgN/0H+1k144i/4U8eBlFIy9TRBSYPzihFNRXXf1Eu97DnkVguehXgGUVCJk)
+    billBaseUrl: https://kong-e2e.observe.ai/
+    billAppSecret: ENC(xo/SPgN/0H+1k144i/4U8eBlFIy9TRBSYPzihFNRXXf1Eu97DnkVguehXgGUVCJk)

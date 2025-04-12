@@ -1,0 +1,38 @@
+<configuration>
+  <appender class="ch.qos.logback.core.ConsoleAppender" name="STDPERF">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%5level] [%thread] %logger{10} [%file:%line] service=neutrino source=perf %replace(tid=%X{tid} appId=%X{appId} api=%X{api} userId=%X{userId} httpStatus=%X{httpStatus}){'[a-zA-Z0-9]+=( |$)',''} %msg %ex%n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%5level] [%thread] %logger{10} [%file:%line] service=neutrino source=platform %replace(tid=%X{tid} flowId=%X{flowId} appId=%X{appId} api=%X{api} forwardingIP=%X{forwardingIp} userId=%X{userId} sessionId=%X{sessionId} observeCallId=%X{observeCallId} secondaryCallId=%X{secondaryCallId} vendor=%X{vendor} vendorCallId=%X{vendorCallId} vendorAccountId=%X{vendorAccountId} observeAccountId=%X{observeAccountId} observeUserId=%X{observeUserId} callBackMetaEventType=%X{callBackMetaEventType} observeUserId=%X{observeUserId} observeAccountId=%X{observeAccountId}){'[a-zA-Z0-9]+=( |$)',''} %msg%n</pattern>
+    </encoder>
+  </appender>
+
+    <logger name="org.springframework.aop.interceptor.PerformanceMonitorInterceptor" level="info" additivity="false">
+        <appender-ref ref="STDPERF"/>
+    </logger>
+
+    <logger additivity="false" level="info" name="org.springframework">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger additivity="false" level="info" name="org.apache.kafka">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <springProfile name="prod,prod-pci">
+        <logger name="com.observeai.platform" level="info" additivity="false">
+            <appender-ref ref="STDOUT"/>
+        </logger>
+    </springProfile>
+
+    <springProfile name="test,e2e,mock,local,default,perf">
+        <logger name="com.observeai.platform" level="debug" additivity="false">
+            <appender-ref ref="STDOUT"/>
+        </logger>
+    </springProfile>
+
+</configuration>

@@ -1,0 +1,323 @@
+[ {
+  "id" : "4f18d718-2a1b-4ba9-81f5-3998ed9969f2",
+  "transcript" : "c hello",
+  "start_time" : 3,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "f435981f-6c97-427e-a4e5-5ae1fde3dbc8",
+  "transcript" : "do i have your permission to call you guys at",
+  "start_time" : 10,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "5c21d5b1-fcd8-465a-a046-f7928bde0898",
+  "transcript" : "do i have your permission to call you back at this number",
+  "start_time" : 9,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ {
+    "name" : "PERMISSION_TO_CALLBACK",
+    "id" : "1101"
+  } ],
+  "suggestions" : [ ]
+}, {
+  "id" : "0fc63eac-3131-40aa-aeb2-38496c6b3158",
+  "transcript" : "that balance has being called due today",
+  "start_time" : 16,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ {
+    "name" : "PURPOSE_AND_DEMAND-2",
+    "id" : "1103"
+  } ],
+  "suggestions" : [ ]
+}, {
+  "id" : "9d10c86a-44db-42c8-8bc2-4d4551250888",
+  "transcript" : "that balance will",
+  "start_time" : 14,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "ee7ce912-ab61-4a34-a53b-76c0a8f4102c",
+  "transcript" : "you can take care of there over the phone",
+  "start_time" : 18,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "03b9a45f-2e48-42ef-a625-4ede8117a216",
+  "transcript" : "then my check can five three card",
+  "start_time" : 22,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "261cbf77-6901-4b6a-bd9a-e0c26eaf787d",
+  "transcript" : "you can take care of the name will your phone them by check debit card for",
+  "start_time" : 20,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "dcfba1e7-a8fb-4adb-8008-e73e39a859c6",
+  "transcript" : "eight",
+  "start_time" : 26,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "2811cc72-78f2-43d4-9d84-ac5085ca68d5",
+  "transcript" : "it's method be prefer",
+  "start_time" : 25,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "958520e1-2db2-4cd2-960c-11aba63b5fd1",
+  "transcript" : "which method do you prefer to today",
+  "start_time" : 26,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "69ce7bf1-715d-4fee-8d48-0ecc7fbd7eea",
+  "transcript" : "which method do you prefer today",
+  "start_time" : 31,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "b7426d9e-ccff-410d-9d0b-ed4b2cc6970f",
+  "transcript" : "which method do you prefer today",
+  "start_time" : 31,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ {
+    "name" : "PURPOSE_AND_DEMAND-4",
+    "id" : "1105"
+  }, {
+    "name" : "PURPOSE_AND_DEMAND-4",
+    "id" : "1105"
+  } ],
+  "suggestions" : [ ]
+}, {
+  "id" : "eeb75d23-f610-4b93-8836-c622d46a4e1f",
+  "transcript" : "how long it take pay or do use",
+  "start_time" : 36,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "881ca14c-9a60-47f7-bbc3-8ae46462c361",
+  "transcript" : "how long will it take you to pay or use",
+  "start_time" : 34,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "9f78a725-af05-433b-a4da-df23c4c6d8e6",
+  "transcript" : "how close to the balance can come today",
+  "start_time" : 41,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "10ea045e-8661-485c-a359-a21a330b096f",
+  "transcript" : "how close to the balance come to",
+  "start_time" : 39,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "6f46a969-30c4-4fc9-b0d5-3fa3e245bd5d",
+  "transcript" : "close to the best",
+  "start_time" : 44,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "ccafd184-b046-4c49-be5d-781518676062",
+  "transcript" : "how close to the balance can you come to today",
+  "start_time" : 47,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "3a57f054-9e72-4b9c-a137-348f80e24710",
+  "transcript" : "can you come to the",
+  "start_time" : 48,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ {
+    "name" : "NEGOTIATIONS-2",
+    "id" : "1107"
+  } ],
+  "suggestions" : [ ]
+}, {
+  "id" : "9a47b11e-0d63-4b4a-ad11-c514b08976c0",
+  "transcript" : "how long will it take you to pay off",
+  "start_time" : 49,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "7636b4fb-3ab5-4281-9653-1c20bdcb2cc3",
+  "transcript" : "how long will it take you to pay off",
+  "start_time" : 49,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "229202d3-6dfe-453e-aee8-759dcc008bc7",
+  "transcript" : "something eleventh",
+  "start_time" : 53,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "798d4dde-0d3d-48fa-ab39-8a2692c13f6e",
+  "transcript" : "the rest of the balance",
+  "start_time" : 54,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "8ffa3b39-8bf7-4ae4-831e-834664dc846e",
+  "transcript" : "two",
+  "start_time" : 55,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "8ee89b5a-8c2c-47cd-bbc0-ac7fce706aa1",
+  "transcript" : "two three days",
+  "start_time" : 55,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "fb9ea0a4-5422-42cf-9354-3bfed226a6dd",
+  "transcript" : "yes he's the connection",
+  "start_time" : 59,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "d55b8561-bb2d-4b52-b96d-9a8bf306ff5b",
+  "transcript" : "yeah this the collection agency that has been same to your client",
+  "start_time" : 61,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "cc07e410-11e0-4999-8ca1-96a8025abfed",
+  "transcript" : "again see that has been assigned to your client",
+  "start_time" : 62,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "86a94b48-30e1-4664-995a-422a64eabfa5",
+  "transcript" : "only submitted any anybody at the money do",
+  "start_time" : 64,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "d951e1ec-96a0-4879-8f22-a4943c83fc1e",
+  "transcript" : "account the remaining balance of a mountain due",
+  "start_time" : 64,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "df15aba7-7061-4f0b-bdc7-a1c883951713",
+  "transcript" : "yes it's the collection agency that has been assigned to your client",
+  "start_time" : 70,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "a1cd61ff-9be6-4816-80a8-08484cd61787",
+  "transcript" : "yes is the collection agency that has been assigned to your thing",
+  "start_time" : 70,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "25cffda0-eee7-4150-a82a-906281bb257f",
+  "transcript" : "account you remaining balance of",
+  "start_time" : 74,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ {
+    "name" : "PURPOSE_AND_DEMAND-1",
+    "id" : "1102"
+  } ],
+  "suggestions" : [ ]
+}, {
+  "id" : "4d36f3c2-031d-4168-8fc1-af1037c3fb19",
+  "transcript" : "account with the remaining balance of amount due",
+  "start_time" : 74,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "967a3c31-66ba-4c38-9ee8-9016dc0dd966",
+  "transcript" : "monday",
+  "start_time" : 75,
+  "speaker" : "AGENT",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "33a84ea8-2786-464e-abed-10c24c11fb4f",
+  "transcript" : "yes",
+  "start_time" : 79,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+}, {
+  "id" : "05ca6310-9e68-451c-a9f5-4bda72a60e1e",
+  "transcript" : "end call",
+  "start_time" : 82,
+  "speaker" : "CUSTOMER",
+  "message_type" : "TRANSCRIPT",
+  "moment_names" : [ ],
+  "suggestions" : [ ]
+} ]

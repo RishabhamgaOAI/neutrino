@@ -1,0 +1,10 @@
+observe:
+  assetAlias: observe.backend.service
+  appId: aXVKIUIEJLnxaldkxjefdwej
+  appSecret: ENC(gMlRtipQ7S+DK6nffKhW/tXwyDVmyyTdu/jPFG6mBmYrUINOwHsJU5kAzC6A21Oc)
+auth:
+  assetAlias: observe.backend.service
+  appId: aXVKIUIEJLnxaldkxjefdwej
+  appSecret: ENC(cji68bFQRuaU9YETqqWpugIkGGJI0bH+ekSnmME694KBkJKMl4RKvhbxLKccecin)
+  baseUrl: https://api-e2e.observe.ai/
+  verifyPath: v1/auth/verify

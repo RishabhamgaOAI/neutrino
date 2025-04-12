@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.observeai.platform.realtime.neutrino.client.five9.DirectiveClientTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.477 s - in com.observeai.platform.realtime.neutrino.client.five9.DirectiveClientTest

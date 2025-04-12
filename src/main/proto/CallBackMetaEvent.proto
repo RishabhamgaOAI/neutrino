@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package com.observeai.platform.realtime.proto;
+
+option java_outer_classname = "CallBackMetaEventProto";
+
+enum CallEventTypeProto {
+    START_EVENT = 0;
+    HOLD_EVENT = 1;
+    RESUME_EVENT = 2;
+    TRANSFER_EVENT = 3;
+    END_EVENT = 4;
+}
+
+message CallBackMetaEvent {
+  string vendorName = 1;
+  string vendorCallId = 2;
+  string vendorAccountId = 3;
+  string vendorAgentId = 4;
+  string direction = 5;
+  CallEventTypeProto callEventType = 6;
+  string observeAccountId = 7;
+  string observeUserId = 8;
+  map<string, string> eventMetadata = 9;
+}

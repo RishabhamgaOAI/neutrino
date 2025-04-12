@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "name": "MINI-MIRANDA-1",
+    "speaker": "AGENT",
+    "description": "Agent introduction as debt collector",
+    "theme": "NEUTRAL",
+    "expected": "false",
+    "keywords": ["debt collector collecting debt"]
+  },
+  {
+    "id": "2",
+    "name": "MINI-MIRANDA-2",
+    "speaker": "AGENT",
+    "description": "Did the customer ask to speak with a supervisor?",
+    "theme": "NEUTRAL",
+    "expected": "false",
+    "keywords": ["call being recorded for training"]
+  },
+  {
+    "id": "3",
+    "name": "MINI-MIRANDA-3",
+    "speaker": "AGENT",
+    "description": "Did the customer ask to speak with a supervisor?",
+    "theme": "NEUTRAL",
+    "expected": "false",
+    "keywords": ["ERC collection agency"]
+  }
+]

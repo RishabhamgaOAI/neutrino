@@ -1,0 +1,24 @@
+observe:
+  assetAlias: observe.backend.service
+  appId: aXVKIUIEJLnxaldkxjefdwej
+  appSecret: ENC(gMlRtipQ7S+DK6nffKhW/tXwyDVmyyTdu/jPFG6mBmYrUINOwHsJU5kAzC6A21Oc)
+
+five9:
+  baseUrl: https://localhost:8080/voicestream/v2
+  oauthBaseUrl: https://localhost:8080
+  subscriptionByIdPath: /domains/{domainId}/subscriptions/{subscriptionId}
+  directivesPath: /domains/{domainId}/directives
+  attachDirectivePath: /domains/{domainId}/subscriptions/{subscriptionId}/directive/{directiveId}
+  introspectPath: /v1/introspect?client_id={client_id}
+  # directive related properties
+  trustToken: dd96e2c9-c84f-4c04-bec2-257ead1cd709
+  callEventUrl: https://0f3a-103-197-113-157.ngrok.io/apis/v1/five9/callevents
+  voiceStreamEventUrl: https://0f3a-103-197-113-157.ngrok.io/apis/v1/five9/voicestream/events
+  grpcTargetUrl: five9-grpc.observe.ai:443
+
+dravity:
+  url: http://localhost:8080/
+  accountAndUserInfoPath: /apis/v1/accountAndUserInfo
+  accountInfoByVendorAccountIdPath: /apis/v2/accounts/{vendor}/{vendorAccountId}
+  accountCriteriaPath: /apis/v1/accountsCriteria
+  updateAccountConfigPath: /apis/v1/vendorSpecificConfig
